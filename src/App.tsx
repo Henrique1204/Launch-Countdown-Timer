@@ -2,6 +2,7 @@ import React from 'react';
 
 import TituloPrincipal from './Components/TituloPrincipal';
 import CardContador from './Components/CardContador';
+import DigitoContador from './Components/DigitoContador';
 
 const App: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const App: React.FC = () => {
       <TituloPrincipal />
 
       <CardContador>
-        08
+        <DigitoContador>08</DigitoContador>
       </CardContador>
     </main>
   );
