@@ -34,8 +34,14 @@ export const GlobalStyles = createGlobalStyle`
         background: url('./imagens/pattern-hills.svg') no-repeat bottom , url('./imagens/bg-stars.svg') no-repeat top;
         background-size: 100%;
         background-color: ${({ theme }) => theme.cores.bgAzulEscuro};
-        display: grid;
-        align-items: center;
+        display: flex;
+    }
+
+    #root {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     main {
