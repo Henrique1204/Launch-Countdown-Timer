@@ -9,6 +9,11 @@ const Legenda = styled.h2`
     text-transform: uppercase;
     letter-spacing: 6px;
     color: ${({ theme }) => theme.cores.cinzaAzulado};
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
 `;
 
 type PeriodoEnum = 'days' | 'hours' | 'minutes' | 'seconds';

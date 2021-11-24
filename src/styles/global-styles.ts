@@ -35,6 +35,11 @@ export const GlobalStyles = createGlobalStyle`
         background-size: 100%;
         background-color: ${({ theme }) => theme.cores.bgAzulEscuro};
         display: flex;
+
+        @media (max-width: 768px) {
+            background: url('./imagens/pattern-hills.svg') no-repeat bottom , url('./imagens/bg-stars.svg') no-repeat top;
+            background-color: ${({ theme }) => theme.cores.bgAzulEscuro};
+        }
     }
 
     #root {
@@ -48,10 +53,16 @@ export const GlobalStyles = createGlobalStyle`
         width: 100%;
         max-width: 1440px;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 0 2rem;
         display: grid;
         grid-template-columns: repeat(4, 148px);
         gap: 10.4rem 3.2rem;
         justify-content: center;
+
+        @media (max-width: 768px) {
+            padding: 0 1rem;
+            grid-template-columns: repeat(4, 70px);
+            gap: 5rem 1.6rem;
+        }
     }
 `;

@@ -11,32 +11,46 @@ export const Container = styled.div`
     overflow: hidden;
 
     &::before, &::after {
-        content: '';
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background-color: ${theme.cores.bgAzulMuitoEscuro};
-        display: block;
-        position: absolute;
-        z-index: 2;
-        top: 64px;
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: ${theme.cores.bgAzulMuitoEscuro};
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 64px;
     }
 
     &::before {
-        left: -6px;
+      left: -6px;
     }
 
     &::after {
-        right: -6px;
+      right: -6px;
+    }
+  
+    @media (max-width: 768px) {
+      width: 70px;
+      height: 66px;
+      box-shadow: 0 5px 0 ${theme.cores.bgAzulMuitoEscuro};
+
+      &::before, &::after {
+        top: 27px;
+      }
     }
   `}
 `;
 
 export const ContainerMask = styled.div`
-    width: 100%;
-    height: 69px;
-    background-color: rgba(0, 0, 0, 0.15);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    position: absolute;
-    z-index: 1;
+  width: 100%;
+  height: 69px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    height: 32px;
+  }
 `;

@@ -9,6 +9,11 @@ const Container = styled.h1`
     line-height: 1.2;
     color: ${({ theme }) => theme.cores.branca};
     grid-column: 1 / -1;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+        letter-spacing: 6px;
+    }
 `;
 
 /**

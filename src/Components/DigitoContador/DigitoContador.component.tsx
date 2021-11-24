@@ -11,6 +11,11 @@ const Container = styled.span`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        font-size: 3.6rem;
+        letter-spacing: -1.8px;
+    }
 `;
 
 /**
