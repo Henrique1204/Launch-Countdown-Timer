@@ -1,17 +1,17 @@
 import React from 'react';
 
 import TituloPrincipal from './Components/TituloPrincipal';
-import CardContador from './Components/CardContador';
-import DigitoContador from './Components/DigitoContador';
+import ItemContador from './Components/ItemContador';
 
 const App: React.FC = () => {
   return (
     <main>
       <TituloPrincipal />
 
-      <CardContador>
-        <DigitoContador>08</DigitoContador>
-      </CardContador>
+      <ItemContador legenda='days' digito='08' />
+      <ItemContador legenda='hours' digito='23' />
+      <ItemContador legenda='minutes' digito='55' />
+      <ItemContador legenda='seconds' digito='41' />
     </main>
   );
 };
