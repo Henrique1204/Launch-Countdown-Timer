@@ -3,10 +3,12 @@ import styled from 'styled-components';
 
 const Container = styled.h1`
     font-size: 2.2rem;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 7.5px;
     line-height: 1.2;
     color: ${({ theme }) => theme.cores.branca};
+    grid-column: 1 / -1;
 `;
 
 /**

@@ -34,5 +34,18 @@ export const GlobalStyles = createGlobalStyle`
         background: url('./imagens/pattern-hills.svg') no-repeat bottom , url('./imagens/bg-stars.svg') no-repeat top;
         background-size: 100%;
         background-color: ${({ theme }) => theme.cores.bgAzulEscuro};
+        display: grid;
+        align-items: center;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 148px);
+        gap: 10.4rem 3.2rem;
+        justify-content: center;
     }
 `;

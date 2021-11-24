@@ -5,13 +5,13 @@ import CardContador from './Components/CardContador';
 
 const App: React.FC = () => {
   return (
-    <>
+    <main>
       <TituloPrincipal />
 
       <CardContador>
         08
       </CardContador>
-    </>
+    </main>
   );
 };
 
