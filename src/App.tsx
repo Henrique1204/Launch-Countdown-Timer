@@ -1,7 +1,9 @@
 import React from 'react';
 
+import TituloPrincipal from './Components/TituloPrincipal';
+
 const App = () => {
-  return <h1>Olá Mundo</h1>
+  return <TituloPrincipal />
 };
 
 export default App;
